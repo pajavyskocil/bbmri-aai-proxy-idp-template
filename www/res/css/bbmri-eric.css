@@ -12,9 +12,6 @@ body {
 #header h1 {
 	line-height: 32px;
 	font-size: 28px;
-}
-#header .header-link {
-	text-decoration: none;
 	color: #222;
 }
 #header img {
