@@ -21,7 +21,7 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
 			&nbsp; &nbsp; +43 316 34 99 17-0 &nbsp;
 			<a href="mailto:contact@bbmri-eric.eu">contact@bbmri-eric.eu</a>
 		</p>
-		<p>Copyright © BBMRI-ERIC 2017</p>
+		<p>Copyright © BBMRI-ERIC <?php echo date("Y"); ?> </p>
 	</div>
     </div>
 	
