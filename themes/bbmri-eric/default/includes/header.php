@@ -24,7 +24,7 @@ if (array_key_exists('pageid', $this->data)) {
 		'page' => $this->data['pageid']
 	);
 		
-	SimpleSAML_Module::callHooks('htmlinject', $hookinfo);	
+	SimpleSAML\Module::callHooks('htmlinject', $hookinfo);	
 }
 // - o - o - o - o - o - o - o - o - o - o - o - o -
 
@@ -97,8 +97,8 @@ if ($this->isLanguageRTL()) {
 }
 ?>
 
-        <link rel="stylesheet" type="text/css" href="<?php echo SimpleSAML_Module::getModuleUrl('bbmri-eric/res/bootstrap/css/bootstrap.min.css'); ?>" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SimpleSAML_Module::getModuleUrl('bbmri-eric/res/css/bbmri-eric.css'); ?>" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SimpleSAML\Module::getModuleUrl('bbmri-eric/res/bootstrap/css/bootstrap.min.css'); ?>" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SimpleSAML\Module::getModuleUrl('bbmri-eric/res/css/bbmri-eric.css'); ?>" />
 	
 	<meta name="robots" content="noindex, nofollow" />
 	
@@ -129,7 +129,7 @@ if($onLoad !== '') {
 <div id="wrap">
 	
 	<div id="header">
-		<img src="<?php echo SimpleSAML_Module::getModuleUrl('bbmri-eric/res/img/BBMRI-ERIC-gateway-for-health_430.png'); ?>" alt="BBMRI-ERIC logo">
+		<img src="<?php echo SimpleSAML\Module::getModuleUrl('bbmri-eric/res/img/BBMRI-ERIC-gateway-for-health_430.png'); ?>" alt="BBMRI-ERIC logo">
 		<h1>
 		<?php 
 			echo (isset($this->data['header']) ? $this->data['header'] : 'BBMRI-ERIC proxy IdP');

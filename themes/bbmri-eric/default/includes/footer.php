@@ -13,7 +13,7 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
     <div style="margin: 0px auto; max-width: 1000px;">
 
 	<div style="float: left;">
-		<img src="<?php echo SimpleSAML_Module::getModuleUrl('bbmri-eric/res/img/BBMRI-ERIC-gateway-for-health_216.png') ?>">
+		<img src="<?php echo SimpleSAML\Module::getModuleUrl('bbmri-eric/res/img/BBMRI-ERIC-gateway-for-health_216.png') ?>">
 	</div>
 	
 	<div style="float: left;">
