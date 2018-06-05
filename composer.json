@@ -1,6 +1,7 @@
 {
     "name": "bbmri/simplesamlphp-module-bbmri",
     "description": "A SimpleSAMLphp module providing template for DiscoPower and user-facing parts of the SSP for BBMRI",
+    "version": "1.0.0-rc",
     "type": "simplesamlphp-module",
     "require": {
         "simplesamlphp/composer-module-installer": "~1.0"
