@@ -64,8 +64,8 @@ if (isset($this->data['errorReportAddress'])) {
 	<div class="form-group">
 		<label class="col-sm-2 control-label" for="email"><?php echo $this->t('report_email'); ?></label>
 		<div class="col-sm-10">
-			<input name="email" type="email" class="form-control" id="email" placeholder="Email">
-			<span  class="help-block"><?php echo $this->t('report_text'); ?></span>
+			<input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
+			<span  class="help-block"><?php echo $this->t('{bbmri:bbmri:error_report_email_message}');?></span>
 		</div>
 	</div>
 
