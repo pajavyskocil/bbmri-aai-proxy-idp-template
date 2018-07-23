@@ -8,7 +8,7 @@
 <body onload="document.getElementsByTagName('input')[0].click();">
 
 	<noscript>
-		<p><strong>Note:</strong> Since your browser does not support JavaScript, you must press the button below once to proceed.</p> 
+		<p><strong><?php echo $this->t('{bbmri:bbmri:note}'); ?></strong><?php echo $this->t('{bbmri:bbmri:browser_not_support_javascript}'); ?></p>
 	</noscript> 
 	
 	<form method="post" action="<?php echo htmlspecialchars($this->data['destination']); ?>">
