@@ -1,5 +1,41 @@
 {
   "error_report_email_message": {
     "en": "Please provide your mail so that we can contact you for further information or let you know the issue was fixed."
+  },
+  "error_number": {
+    "en": "Error number: "
+  },
+  "error_id": {
+    "en": "Error ID"
+  },
+  "note": {
+    "en": "Note:"
+  },
+  "browser_not_support_javascript": {
+    "en": " Since your browser does not support JavaScript, you must press the button below once to proceed."
+  },
+  "previous_selection": {
+    "en": "your previous selection"
+  },
+  "cannot_find_institution": {
+    "en": "Still can't find your institution? Create an account at Hostel by clicking the button below or contact us at "
+  },
+  "create_account_hostel": {
+    "en": "Create account at Hostel"
+  },
+  "cannot_find_institution_extended": {
+    "en": "Can't find your institution? Select it in extended list and help us "
+  },
+  "more": {
+    "en": "more "
+  },
+  "type_name_institution": {
+    "en": "Type the name of your institution"
+  },
+  "institutional_account": {
+    "en": "your institutional account"
+  },
+  "add_institution": {
+    "en": "add your institution"
   }
 }

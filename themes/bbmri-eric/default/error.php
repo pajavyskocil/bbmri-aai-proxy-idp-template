@@ -15,7 +15,7 @@ $this->includeAtTemplateBase('includes/header.php');
 <?php
 echo htmlspecialchars($this->t($this->data['dictDescr'], $this->data['parameters']));
 ?>
- <a href="#moreInfo" data-toggle="collapse">more <span class="caret"></span></a>
+ <a href="#moreInfo" data-toggle="collapse"><?php echo $this->t('{bbmri:bbmri:more}'); ?><span class="caret"></span></a>
 
 </p>
 
@@ -26,7 +26,7 @@ if (isset($this->data['includeTemplate'])) {
 }
 ?>
 <div id="moreInfo" class="collapse">
-	<p id="trackid" class="input-left">Error number: <?php echo $this->data['error']['trackId']; ?></p>
+	<p id="trackid" class="input-left"><?php echo $this->t('{bbmri:bbmri:error_number}'); ?><?php echo $this->data['error']['trackId']; ?></p>
 <?php
 // print out exception only if the exception is available
 if ($this->data['showerrors']) {
@@ -55,7 +55,7 @@ if (isset($this->data['errorReportAddress'])) {
     <form action="<?php echo htmlspecialchars($this->data['errorReportAddress']); ?>" method="post" class="form-horizontal">
 
 	<div class="form-group">
-		<label class="col-sm-2 control-label" for="reportId">Error ID</label>
+		<label class="col-sm-2 control-label" for="reportId"><?php echo $this->t('{bbmri:bbmri:error_id}'); ?></label>
 		<div class="col-sm-10">
 			<input name="reportId" type="text" class="form-control" id="reportId" value="<?php echo $this->data['error']['reportId']; ?>" readonly>
 		</div>
