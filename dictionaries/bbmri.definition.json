@@ -37,5 +37,8 @@
   },
   "add_institution": {
     "en": "add your institution"
+  },
+  "warning": {
+    "en": "Warning!"
   }
 }
