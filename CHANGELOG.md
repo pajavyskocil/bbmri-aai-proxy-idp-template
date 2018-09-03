@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 [Added]
 - Possibility to show a warning in disco-tpl
 - Added License
+- Added badges to README
 
 [Changed]
  - Filling email is now required for reporting error
