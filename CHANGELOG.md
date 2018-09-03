@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 [Added]
 - Possibility to show a warning in disco-tpl
+- Added License
 
 [Changed]
  - Filling email is now required for reporting error
