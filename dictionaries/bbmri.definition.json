@@ -18,10 +18,13 @@
     "en": "your previous selection"
   },
   "cannot_find_institution": {
-    "en": "Still can't find your institution? Create an account at Hostel by clicking the button below or contact us at "
+    "en": "Don't have an account? Create it by clicking the button below or contact us at "
   },
   "create_account_hostel": {
     "en": "Create account at Hostel"
+  },
+  "create_account_lifeScienceHostel": {
+    "en": "Create account at LifeScience Hostel"
   },
   "cannot_find_institution_extended": {
     "en": "Can't find your institution? Select it in extended list and help us "
