@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+[Changed]
+- Renamed directory 'themes/bbmri-eric' to 'themes/bbmri' and file 'bbmri-eric.css' to 'bbmri.css'
+- Fixed names in LICENSE, footer and other files
 
 ## [v1.0.0]
 [Added]

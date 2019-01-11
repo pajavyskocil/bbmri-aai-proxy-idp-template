@@ -98,7 +98,7 @@ if ($this->isLanguageRTL()) {
 ?>
 
         <link rel="stylesheet" type="text/css" href="<?php echo SimpleSAML\Module::getModuleUrl('bbmri/res/bootstrap/css/bootstrap.min.css'); ?>" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SimpleSAML\Module::getModuleUrl('bbmri/res/css/bbmri-eric.css'); ?>" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SimpleSAML\Module::getModuleUrl('bbmri/res/css/bbmri.css'); ?>" />
 	
 	<meta name="robots" content="noindex, nofollow" />
 	
