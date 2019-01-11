@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+
+## [V2.0.0]
 [Added]
 - Added favicon 
 
@@ -21,4 +23,5 @@ All notable changes to this project will be documented in this file.
  - Whole module now uses a dictionary
  
  [Unreleased]: https://github.com/CESNET/bbmri-aai-proxy-idp-template/tree/master
+ [v2.0.0]: https://github.com/CESNET/bbmri-aai-proxy-idp-template/tree/v2.0.0
  [v1.0.0]: https://github.com/CESNET/bbmri-aai-proxy-idp-template/tree/v1.0.0
