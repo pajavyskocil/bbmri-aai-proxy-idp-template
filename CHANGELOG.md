@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+[Added]
+- Added support for LifeScience hostel
 
 ## [V2.0.0]
 [Added]
