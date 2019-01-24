@@ -1,7 +1,7 @@
 {
     "name": "bbmri/simplesamlphp-module-bbmri",
     "description": "A SimpleSAMLphp module providing template for DiscoPower and user-facing parts of the SSP for BBMRI-ERIC",
-    "version": "2.1.0-dev",
+    "version": "2.2.0-dev",
     "type": "simplesamlphp-module",
     "keywords": ["BBMRI", "bbmri", "BBMRI-ERIC", "bbmri-eric", "simplesamlphp"],
     "license": "BSD-2-Clause",
