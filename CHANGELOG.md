@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 [Changed]
 - Social Idps are not shown when adding institution
 
+[Fixed]
+- Fixed RegistrationURL for LifeScience Hostel
+
+
 ## [v2.1.0]
 [Added]
 - Added support for LifeScience hostel
