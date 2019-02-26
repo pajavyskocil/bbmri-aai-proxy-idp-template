@@ -18,7 +18,7 @@
     "en": "your previous selection"
   },
   "cannot_find_institution": {
-    "en": "Don't have an account? Create it by clicking the button below or contact us at "
+    "en": "Still can't find your institution? Contact us at "
   },
   "create_account_hostel": {
     "en": "Create account at Hostel"
@@ -43,5 +43,11 @@
   },
   "warning": {
     "en": "Warning!"
+  },
+  "create_lifescience_account": {
+    "en": "Don't have an account? Create LifeScience account "
+  },
+  "here": {
+    "en": "here."
   }
 }
