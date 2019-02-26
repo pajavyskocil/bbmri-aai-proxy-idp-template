@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+[Added]
+- Added support for pass selected IdP from SP in AuthnContextClassRef attribute.
+    - It's required add this line into module_perun.php config file 
+    <pre>
+    'disco.removeAuthnContextClassRefPrefix' => 'urn:cesnet:proxyidp:',
+    </pre> 
+    
 [Changed]
 - Social Idps are not shown when adding institution
 

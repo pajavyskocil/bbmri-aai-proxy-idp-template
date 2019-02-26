@@ -23,6 +23,11 @@ const WARNING_USER_CAN_CONTINUE = 'userCanContinue';
 const WARNING_TITLE = 'title';
 const WARNING_TEXT = 'text';
 
+const URN_CESNET_PROXYIDP_IDPENTITYID = "urn:cesnet:proxyidp:idpentityid:";
+
+$authContextClassRef = null;
+$idpEntityId = null;
+
 $warningIsOn = false;
 $warningUserCanContinue = null;
 $warningTitle = null;
@@ -63,6 +68,10 @@ if ($warningIsOn) {
 	}
 }
 
+if (isset($this->data['AuthnContextClassRef'])) {
+	$authContextClassRef = $this->data['AuthnContextClassRef'];
+}
+
 # Do not show social IdPs when using addInstitutionApp, show just header Add Institution
 if ($this->isAddInstitutionApp()) {
 	// Translate title in header
@@ -76,6 +85,18 @@ if ($this->isAddInstitutionApp()) {
 
 
 	$this->includeAtTemplateBase('includes/header.php');
+
+	if ($authContextClassRef != null) {
+		foreach ($authContextClassRef as $value) {
+			if (substr($value, 0, strlen(URN_CESNET_PROXYIDP_IDPENTITYID)) === URN_CESNET_PROXYIDP_IDPENTITYID) {
+				$idpEntityId = substr($value, strlen(URN_CESNET_PROXYIDP_IDPENTITYID), strlen($value));
+				SimpleSAML\Logger::info("Redirecting to " . $idpEntityId);
+				$url = $this->getContinueUrl($idpEntityId);
+				SimpleSAML\Utils\HTTP::redirectTrustedURL($url);
+				exit;
+			}
+		}
+	}
 
 	if ($warningIsOn) {
 		if ($warningUserCanContinue) {
