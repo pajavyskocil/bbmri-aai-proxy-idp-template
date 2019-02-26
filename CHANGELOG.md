@@ -10,6 +10,9 @@ All notable changes to this project will be documented in this file.
 - addInstitution URL and email in disco-tpl.php are loaded from a config file
 - Templates are included from module perun
 
+[Fixed]
+- Fixed the email address in footer
+
 ## [v2.2.0]
 [Added]
 - Added support for pass selected IdP from SP in AuthnContextClassRef attribute.
