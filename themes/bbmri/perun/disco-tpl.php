@@ -63,63 +63,67 @@ if ($warningIsOn) {
 	}
 }
 
+# Do not show social IdPs when using addInstitutionApp, show just header Add Institution
+if ($this->isAddInstitutionApp()) {
+	// Translate title in header
+	$this->data['header'] = $this->t('{bbmri:bbmri:add_institution}');
+	$this->includeAtTemplateBase('includes/header.php');
+} else {
 
-if ($warningIsOn && !$warningUserCanContinue) {
-	$this->data['header'] = $this->t('{bbmri:bbmri:warning}');
-}
-
-
-$this->includeAtTemplateBase('includes/header.php');
-
-
-if ($warningIsOn) {
-	if($warningUserCanContinue) {
-		echo '<div class="alert alert-warning">';
-	} else {
-		echo '<div class="alert alert-danger">';
+	if ($warningIsOn && !$warningUserCanContinue) {
+		$this->data['header'] = $this->t('{bbmri:bbmri:warning}');
 	}
-	echo '<h4> <strong>' . $warningTitle . '</strong> </h4>';
-	echo $warningText;
-	echo '</div>';
-}
 
-if (!$warningIsOn || $warningUserCanContinue) {
-	if (!empty($this->getPreferredIdp())) {
 
-		echo '<p class="descriptionp">' . $this->t('{bbmri:bbmri:previous_selection}') . '</p>';
-		echo '<div class="metalist list-group">';
-		echo showEntry($this, $this->getPreferredIdp(), true);
+	$this->includeAtTemplateBase('includes/header.php');
+
+	if ($warningIsOn) {
+		if ($warningUserCanContinue) {
+			echo '<div class="alert alert-warning">';
+		} else {
+			echo '<div class="alert alert-danger">';
+		}
+		echo '<h4> <strong>' . $warningTitle . '</strong> </h4>';
+		echo $warningText;
+		echo '</div>';
+	}
+
+	if (!$warningIsOn || $warningUserCanContinue) {
+		if (!empty($this->getPreferredIdp())) {
+
+			echo '<p class="descriptionp">' . $this->t('{bbmri:bbmri:previous_selection}') . '</p>';
+			echo '<div class="metalist list-group">';
+			echo showEntry($this, $this->getPreferredIdp(), true);
+			echo '</div>';
+
+
+			echo getOr();
+		}
+
+
+		echo '<div class="row">';
+		foreach ($this->getIdps('social') AS $idpentry) {
+
+			echo '<div class="col-md-4">';
+			echo '<div class="metalist list-group">';
+			echo showEntry($this, $idpentry, false);
+			echo '</div>';
+			echo '</div>';
+
+		}
 		echo '</div>';
 
 
-        echo getOr();
-    }
+		echo getOr();
 
 
+		echo '<p class="descriptionp">';
+		echo $this->t('{bbmri:bbmri:institutional_account}');
+		echo '</p>';
+	}
+}
 
-
-    echo '<div class="row">';
-    foreach ($this->getIdps('social') AS $idpentry) {
-
-        echo '<div class="col-md-4">';
-        echo '<div class="metalist list-group">';
-        echo showEntry($this, $idpentry, false);
-        echo '</div>';
-        echo '</div>';
-
-    }
-    echo '</div>';
-
-
-
-    echo getOr();
-
-
-
-    echo '<p class="descriptionp">';
-    echo $this->t('{bbmri:bbmri:institutional_account}');
-    echo '</p>';
-
+if (!$warningIsOn || $warningUserCanContinue) {
     echo '<div class="inlinesearch">';
     echo '	<form id="idpselectform" action="?" method="get">
 			<input class="inlinesearchf form-control input-lg" placeholder="' . $this->t('{bbmri:bbmri:type_name_institution}') . '" 
@@ -140,7 +144,7 @@ if (!$warningIsOn || $warningUserCanContinue) {
 
 
     echo '<div class="no-idp-found alert alert-info">';
-    if ($this->isOriginalSpNonFilteringIdPs()) {
+    if ($this->isAddInstitutionApp()) {
         echo $this->t('{bbmri:bbmri:cannot_find_institution}') . '<a href="mailto:aai-infrastructure@lists.bbmri-eric.eu?subject=Request%20for%20adding%20new%20IdP">aai-infrastructure@lists.bbmri-eric.eu</a>';
         echo '<div class="metalist list-group">';
         echo '<a class="btn btn-block social" href="https://adm.hostel.eduid.cz/registrace/k1" style="background: #43554a">';
