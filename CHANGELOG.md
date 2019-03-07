@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+
+## [v2.2.0]
 [Added]
 - Added support for pass selected IdP from SP in AuthnContextClassRef attribute.
     - It's required add this line into module_perun.php config file 
@@ -41,6 +43,7 @@ All notable changes to this project will be documented in this file.
  - Whole module now uses a dictionary
  
  [Unreleased]: https://github.com/CESNET/bbmri-aai-proxy-idp-template/tree/master
+ [v2.2.0]: https://github.com/CESNET/bbmri-aai-proxy-idp-template/tree/v2.2.0
  [v2.1.1]: https://github.com/CESNET/bbmri-aai-proxy-idp-template/tree/v2.1.1
  [v2.1.0]: https://github.com/CESNET/bbmri-aai-proxy-idp-template/tree/v2.1.0
  [v2.0.0]: https://github.com/CESNET/bbmri-aai-proxy-idp-template/tree/v2.0.0
