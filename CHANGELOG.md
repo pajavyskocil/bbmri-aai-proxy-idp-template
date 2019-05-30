@@ -2,54 +2,56 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+#### Fixed
+- Fixed the style of Added,Changed,Fixed,Removed,...
 
 ## [v2.3.0]
-[Added]
+#### Added
 - Added file phpcs.xml
 
-[Changed]
+#### Changed
 - Changed code style to PSR-2
 - addInstitution URL and email in disco-tpl.php are loaded from a config file
 - Templates are included from module perun
 
-[Fixed]
+#### Fixed
 - Fixed the email address in footer
 
 ## [v2.2.0]
-[Added]
+#### Added
 - Added support for pass selected IdP from SP in AuthnContextClassRef attribute.
     - It's required add this line into module_perun.php config file 
     <pre>
     'disco.removeAuthnContextClassRefPrefix' => 'urn:cesnet:proxyidp:',
     </pre> 
     
-[Changed]
+#### Changed
 - Social Idps are not shown when adding institution
 
 ## [v2.1.1]
-[Fixed]
+#### Fixed
 - Fixed RegistrationURL for LifeScience Hostel
 
 
 ## [v2.1.0]
-[Added]
+#### Added
 - Added support for LifeScience hostel
 
 ## [V2.0.0]
-[Added]
+#### Added
 - Added favicon 
 
-[Changed]
+#### Changed
 - Renamed directory 'themes/bbmri-eric' to 'themes/bbmri' and file 'bbmri-eric.css' to 'bbmri.css'
 - Fixed names in LICENSE, footer and other files
 
 ## [v1.0.0]
-[Added]
+#### Added
 - Possibility to show a warning in disco-tpl
 - Added License
 - Added badges to README
 
-[Changed]
+#### Changed
  - Filling email is now required for reporting error
  - Changed help-block text for email in report error form
  - Whole module now uses a dictionary
