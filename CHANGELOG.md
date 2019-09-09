@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
 - Changed code style to PSR-2
 - addInstitution URL and email in disco-tpl.php are loaded from a config file
 - Templates are included from module perun
+- Using of short array syntax (from array() to [])
 
 #### Fixed
 - Fixed the email address in footer
