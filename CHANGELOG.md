@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 #### Fixed
 - Fixed the style of Added,Changed,Fixed,Removed,...
 
+#### Changed
+- Removed warning template - it is no longer needed here because it was moved to module perun
+
 ## [v2.3.0]
 #### Added
 - Added file phpcs.xml
